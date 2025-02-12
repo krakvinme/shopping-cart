@@ -10,6 +10,12 @@
 		<link rel="preconnect" href="https://fonts.googleapis.com">
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 		<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+		<link rel="icon" type="image/png" href="favicon/favicon-96x96.png" sizes="96x96" />
+		<link rel="icon" type="image/svg+xml" href="favicon/favicon.svg" />
+		<link rel="shortcut icon" href="favicon/favicon.ico" />
+		<link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png" />
+		<link rel="manifest" href="favicon/site.webmanifest" />
+		
 		<link href="css/normalize.css" rel="stylesheet">
 		<link href="css/style.css" rel="stylesheet">
 
@@ -22,7 +28,7 @@
 	</head>
 	<body>
 		<!--LAYOUT-->
-		<header class="page-header">
+		<header class="page-header" id="page-header">
 			<div class="container">
 				<div class="page-header__wrap">
 					<a href="#" class="logo">
@@ -30,20 +36,44 @@
 							<img src="img/logo.svg" alt="">
 						</span>
 					</a>
-					<span class="cart-counter" id="cart_counter" onclick=" ShoppingPage.handleOpenShoppingPage()"></span>
+					<span class="cart-counter" id="cart_counter"></span>
 				</div>
 			</div>
 		</header>
 		<main class="layout">
 			<div class="container">
-				<div class="page-wrap" id="products"></div>
+				<div class="page-wrap" >
+					<div class="list" id="products">
+						<!-- <div class="list__item">
+							<div class="list__in">
+								<div class="list__img">
+									<img src="img/i1.jpg" alt="">
+								</div>
+								<div class="list__title">
+									fff
+								</div>
+								<div class="list__price">
+									ddd
+								</div>
+								<a href="#" class="list__btn">Добавить в корзину</a>
+							</div>
+						</div> -->
+					</div>
+				</div>
 			</div>
 		
 		</main><!-- END LAYOUT-->
 	</body>
 
 	<!-- Constants and Utils -->
+	 <script src="js/constants/catalog.js"></script>
 	<script src="js/constants/root.js"></script>
+	<!-- Header -->
+	<script src="js/components/Header.js"></script>
+	<!-- Products -->
+	<script src="js/components/Products.js"></script>
+	<!-- Shopping -->
+	<script src="js/components/Shopping.js"></script>
 
 	<script src="index.js"></script>
 </html>

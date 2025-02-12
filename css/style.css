@@ -84,7 +84,6 @@ h1{
     filter: drop-shadow(4px 4px 10px rgba(0, 0, 0, 0.18));
     background: #D3BF8B;
     border-radius: 10px;
-    margin-right: 43px;
 }
 .logo-icon img{
     max-width: 100%;
@@ -104,7 +103,6 @@ h1{
     font-size: 20px;
     color: #000;
     text-decoration: none;
-    /* margin: 0 62px 0 0; */
     transition: all .25s ease;
     position: relative;
 }
@@ -184,11 +182,10 @@ h1{
 
 
 .page-wrap{
-    display: flex;
+   
     padding-bottom: 40px;
 }
 .page-info{
-    /* flex-basis: 600px; */
     width: 520px;
     min-width: 520px;
     padding: 100px 30px 100px 0;
@@ -256,11 +253,6 @@ h1{
     0 6px 30px 5px rgba(33,37,41,.04), 
     0 8px 10px -5px rgba(33,37,41,.1);
 }
-/* .list__in:hover .list__btn{
-    border: 1px solid transparent;
-    background-image: var(--linear-gradient);
-} */
-
 .list__btn.active,
 .list__btn:hover{
     border: 1px solid transparent;
@@ -425,9 +417,9 @@ h1{
 }
 
 @media screen and (max-width:991px){
-    .page-header {
+    /* .page-header {
         padding: 30px 0;
-    }
+    } */
     h1 {
         font-size: 38px;
     }
@@ -469,9 +461,7 @@ h1{
 }
 
 @media screen and (max-width:768px){
-    .page-wrap {
-        flex-direction: column;
-    }
+    
     .page-info {
         width: 100%;
         padding: 40px 0;
@@ -493,6 +483,9 @@ h1{
 }
 
 @media screen and (max-width:600px){
+    .list{
+        flex-direction: column;
+    }
     .page-header {
         padding: 13px 0;
     }
