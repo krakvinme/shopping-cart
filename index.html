@@ -36,7 +36,7 @@
 							<img src="img/logo.svg" alt="">
 						</span>
 					</a>
-					<span class="cart-counter" id="cart_counter"></span>
+					<span class="cart-counter" id="cart_counter" onclick="ShoppingPage.handleOpenShoppingPage();">0</span>
 				</div>
 			</div>
 		</header>
@@ -44,21 +44,9 @@
 			<div class="container">
 				<div class="page-wrap" >
 					<div class="list" id="products">
-						<!-- <div class="list__item">
-							<div class="list__in">
-								<div class="list__img">
-									<img src="img/i1.jpg" alt="">
-								</div>
-								<div class="list__title">
-									fff
-								</div>
-								<div class="list__price">
-									ddd
-								</div>
-								<a href="#" class="list__btn">Добавить в корзину</a>
-							</div>
-						</div> -->
+						<!-- list for render -->
 					</div>
+					<div id="shopping" class="popup-shopping"></div>
 				</div>
 			</div>
 		
@@ -66,8 +54,9 @@
 	</body>
 
 	<!-- Constants and Utils -->
-	 <script src="js/constants/catalog.js"></script>
+	<script src="js/constants/catalog.js"></script>
 	<script src="js/constants/root.js"></script>
+	<script src="js/utils/localStorageUtil.js"></script>
 	<!-- Header -->
 	<script src="js/components/Header.js"></script>
 	<!-- Products -->
