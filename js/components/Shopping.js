@@ -39,7 +39,7 @@ class Shopping {
                 ${htmlCatalog}
             </ol>
             <div class="shopping__total">
-                Общая сумма: ${sumCatalog.toLocaleString()} USD
+                Total amount: ${sumCatalog.toLocaleString()} USD
             </div>
         `;
         ROOT_SHOPPING.innerHTML = html;

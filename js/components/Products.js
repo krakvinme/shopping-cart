@@ -1,8 +1,8 @@
 class Products {
     constructor () {
         this.classnameActive = 'active'; 
-        this.labelAdd = 'Добавить в корзину';
-        this.labelRemove = 'Удалить из корзины';
+        this.labelAdd = 'Add to cart';
+        this.labelRemove = 'Remove from cart';
     }
 
     handleSetLocationStorage(el,id) {
@@ -16,7 +16,6 @@ class Products {
             el.innerHTML = this.labelAdd;
         }
         HeaderCounterView.render(products.length);
-        console.log(products)
     }
 
     render() {
@@ -47,10 +46,9 @@ class Products {
             `
         });
         ROOT_PRODUCTS.innerHTML = htmlCatalog;
-        //HeaderCounterView.render(products.length);
     }
 }
 
 const productsList = new Products();
 
-productsList.render();
+// productsList.render();

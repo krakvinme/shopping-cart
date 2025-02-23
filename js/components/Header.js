@@ -10,6 +10,3 @@ class HeaderCounter {
 }
 
 const HeaderCounterView = new HeaderCounter;
-// ROOT_COUNTER
-const productsStore = localStorageUtil.getProducts();
-HeaderCounterView.render(productsStore.length);
