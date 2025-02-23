@@ -1,3 +1,3 @@
 #### Shopping Cart - project
 ---
-Simple vanilla Javascript project using: Classes, localStorage
+Simple vanilla Javascript project using: Classes, localStorage, Fetch API
